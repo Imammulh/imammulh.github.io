@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imam Portofolio</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="assets/img/fav icon/favicon.ico" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div
+            class="container d-flex justify-content-between align-items-center"
+          >
+            <div class="navbar-brand d-flex col-1-4 col-1-2 align-items-center">
+              <a class="fc-primary" href="#about">Imam</a>
+            </div>
+            <ul
+              class="navbar-nav d-flex justify-content-end col-3-4"
+              id="mobile-nav"
+            >
+              <li class="nav-item">
+                <a href="#about" class="nav-link fc-primary" onclick="hideNav()"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#projects"
+                  class="nav-link fc-primary"
+                  onclick="hideNav()"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#get-in-touch"
+                  class="nav-link fc-primary"
+                  onclick="hideNav()"
+                  >Get In Touch</a
+                >
+              </li>
+            </ul>
+
+            <div class="toggle-menu">
+              <input type="checkbox" onclick="openNav()" id="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="website-content">
+        <div class="container">
+          <div class="d-flex">
+            <aside class="col-1-4 col-2-2">
+              <img
+                src="assets/img/profil.png"
+                alt="profil"
+                class="profil-img"
+              />
+              <div class="aside-body">
+                <h3 class="fc-primary">Imam Mulhaq Rosyadi</h3>
+                <p class="body1">
+                  Undergraduate Computer Science at IPB University
+                </p>
+              </div>
+              <div class="aside-footer">
+                <p class="body1">How to reach me:</p>
+                <ul>
+                  <li class="mt-05">
+                    <a
+                      href="https://www.linkedin.com/in/imam-mulhaq-rosyadi/"
+                      target="_blank"
+                      class="aside-link"
+                      >👔 LinkedIn</a
+                    >
+                  </li>
+                  <li class="mt-05">
+                    <a href="https://github.com/Imammulh" class="aside-link"
+                      >🔮 Github</a
+                    >
+                  </li>
+                  <li class="mt-05">
+                    <a
+                      href="https://www.instagram.com/imammulhaq/"
+                      target="_blank"
+                      class="aside-link"
+                      >📷 Instagram</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <main class="col-3-4 col-2-2">
+              <article id="about" class="card">
+                <p class="caption fc-secondary">ABOUT ME</p>
+                <h3 class="fc-primary">Hi, Imam here 👋</h3>
+                <p class="body2">
+                  I'm currently learning as Computer Science Student at IPB
+                  University. As someone with a computer science background, I
+                  really like problem-solving, front-end development, HCI, and
+                  design. I have made work on several UX Design projects and won
+                  several UI/UX design competitions. I am also active in
+                  volunteering in the IT field, especially UX Design.
+                  <br /><br />
+                  Thank you for visiting. <br />Regards, Imam.
+                </p>
+                <div class="action">
+                  <a
+                    href="https://drive.google.com/file/d/1u5zKsZ26F7R-rbN7BI-_x5gOZNa0S7cD/view?usp=sharing"
+                    target="_blank"
+                    class="btn-link"
+                    >Download CV 📄</a
+                  >
+                </div>
+              </article>
+              <article id="skill" class="card mt-2">
+                <p class="caption fc-secondary">MY SKILL</p>
+                <h3 class="fc-primary">What I Do 💼</h3>
+                <div class="d-flex align-items-center">
+                  <div class="col-2-4">
+                    <img
+                      src="assets/img/ux.png"
+                      alt="ux image"
+                      class="profil-img"
+                    />
+                  </div>
+                  <div class="col-2-4">
+                    <h3 class="fc-primary">UX & UI Design</h3>
+                    <p class="body2">
+                      Creating UX Case Study, Redesign Website/App, Prototyping,
+                      Components Kit on Figma
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center reverse">
+                  <div class="col-2-4 mt-2">
+                    <img
+                      src="assets/img/web.png"
+                      alt="ux image"
+                      class="profil-img"
+                    />
+                  </div>
+                  <div class="col-2-4 mt-2">
+                    <h3 class="fc-primary">Web Development</h3>
+                    <p class="body2">
+                      Creating websites with several frameworks and libraries
+                      like React Js, Laravel, and Bootstrap.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article id="projects" class="card mt-2">
+                <p class="caption fc-secondary">PORTOFOLIO</p>
+                <h3 class="fc-primary">My Projects 🎬</h3>
+                <ul>
+                  <li>
+                    <h3 class="fc-primary">
+                      Event Muslim: Muslim Event Platform
+                    </h3>
+                    <p class="body2 mt-05">
+                      Jan 2021 • Software Engineering Project (Hackathon) • UX &
+                      UI Designer
+                    </p>
+                    <div class="action">
+                      <a
+                        href="https://github.com/Imammulh/EventMuslim"
+                        target="_blank"
+                        class="btn-link"
+                        >See Project 👉</a
+                      >
+                    </div>
+                  </li>
+                  <li class="mt-2">
+                    <h3 class="fc-primary">GrandNews: News App For Elderly</h3>
+                    <p class="body2 mt-05">
+                      Jan 2021 • UX Project • UX & UI Designer
+                    </p>
+                    <div class="action">
+                      <a
+                        href="https://www.behance.net/gallery/108861913/GrandNews-UX-Case-Study"
+                        target="_blank"
+                        class="btn-link"
+                        >See Project 👉</a
+                      >
+                    </div>
+                  </li>
+                  <li class="mt-2">
+                    <h3 class="fc-primary">Stepping Arena: Step Tracker App</h3>
+                    <p class="body2 mt-05">
+                      Augustus - November 2020 • UX Project • UX Designer
+                    </p>
+                    <div class="action">
+                      <a
+                        href="https://www.notion.so/Portofolio-c3ba2ace7ba142c38054cc68b52f7b72"
+                        target="_blank"
+                        class="btn-link"
+                        >See Project 👉</a
+                      >
+                    </div>
+                  </li>
+                  <li class="mt-2">
+                    <h3 class="fc-primary">Cari e-KTP</h3>
+                    <p class="body2 mt-05">
+                      Jan 2020 – Apr 2020 • Software Engineering Project •
+                      Project Manager
+                    </p>
+                    <div class="action">
+                      <a
+                        href="https://github.com/Imammulh/RPL"
+                        target="_blank"
+                        class="btn-link"
+                        >See Project 👉</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </article>
+              <article id="get-in-touch" class="card mt-2">
+                <p class="caption fc-secondary">CONNECT</p>
+                <h3 class="fc-primary">Get In Touch ☕</h3>
+                <div class="d-flex mt-05 justify-content-between">
+                  <div class="col-1-4 btn-link">
+                    <a
+                      href="https://www.linkedin.com/in/imam-mulhaq-rosyadi/"
+                      target="_blank"
+                      class="deco-none fc-secondary"
+                      >👔 LinkedIn</a
+                    >
+                  </div>
+                  <div class="col-1-4 btn-link">
+                    <a
+                      href="https://github.com/Imammulh"
+                      target="_blank"
+                      class="deco-none fc-secondary"
+                      >🔮 Github</a
+                    >
+                  </div>
+                  <div class="col-1-4 btn-link">
+                    <a
+                      href="https://www.instagram.com/imammulhaq/"
+                      target="_blank"
+                      class="deco-none fc-secondary"
+                      >📷 Instagram</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </main>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <p class="body1">
+            © 2021 Made with love by Imam Mulhaq Rosyadi. Illustration From
+            Notion.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
